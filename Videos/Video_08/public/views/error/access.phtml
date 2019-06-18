@@ -1,0 +1,17 @@
+<?php 
+
+//V7 
+
+?>
+<h2><?php if($this->mensaje) echo $this->mensaje; ?></h2> <?php //V7 ?>
+
+<p>&nbsp;</p> <?php //V7 ?>
+
+<a href="<?php echo BASE_URL; ?>">Ir al Inicio</a> | <?php //V7 ?>
+<a href="javascript:history.back(1)">Volver a la p&aacute;gina anterior</a> <?php //V7 ?>
+
+<?php if(!Session::get('autenticado')): ?> <?php //V7 ?>
+
+| <a href="<?php echo BASE_URL . 'login'; ?>">Iniciar Ses&iacute;on</a> <?php //V7 ?>
+
+<?php endif; ?> <?php //V7 ?>
