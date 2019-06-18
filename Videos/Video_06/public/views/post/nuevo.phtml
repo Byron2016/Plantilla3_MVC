@@ -1,0 +1,27 @@
+<?php 
+
+//V5 
+
+//if(isset($this->prueba)) echo $this->prueba; //V5 
+
+?>
+
+<!-- <script type="text/javascript">
+	
+$(document).ready(function(){
+	alert('function jquery');
+});
+
+</script> -->
+
+<form id="form1" method="post" action="<?php echo BASE_URL; ?>post/nuevo" enctype='multipart/form-data'> <?php //V5 ?>
+    <input type="hidden" name="guardar" value="1" /> <?php //V5 ?>
+    <p>Titulo:<br /> <?php //V5 ?>
+    <input type="texto" name="titulo" value="<?php if(isset($this->datos['titulo'])) echo $this->datos['titulo']; ?>"/></p> <?php //V5 ?>
+    
+    <p>Cuerpo:<br /> <?php //V5 ?>
+    <textarea name="cuerpo"><?php if(isset($this->datos['cuerpo'])) echo $this->datos['cuerpo']; ?></textarea></p> <?php //V5 ?>
+
+    <p><input type="submit" class="button" value="Guardar" /></p> <?php //V5 ?>
+ 
+ </form> <?php //V5 ?>

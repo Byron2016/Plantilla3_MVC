@@ -1,0 +1,16 @@
+<?php 
+
+//V6 
+
+?>
+
+<form id="form1" method="post" action=""> <?php //V6 ?>
+    <input type="hidden" name="guardar" value="1" /> <?php //V6 ?>
+    <p>Titulo:<br /> <?php //V6 ?>
+    <input type="texto" name="titulo" value="<?php if(isset($this->datos['titulo'])) echo $this->datos['titulo']; ?>" /></p> <?php //V6 ?>
+    
+    <p>Cuerpo:<br /> <?php //V6 ?>
+    <textarea name="cuerpo"><?php if(isset($this->datos['cuerpo'])) echo $this->datos['cuerpo']; ?></textarea></p> <?php //V6 ?>
+    
+    <p><input type="submit" class="button" value="Guardar" /></p> <?php //V6 ?>
+</form> <?php //V6 ?>
