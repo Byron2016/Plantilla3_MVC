@@ -1,0 +1,29 @@
+<?php 
+
+//V12 
+
+?>
+<h2> Últimos posts prueba </h2> <?php //V12 ?>
+<pre><?php //print_r($this->posts); ?></pre><?php //V12 ?>
+
+ <?php if(isset($this->posts) && count($this->posts)): ?><?php //V12 ?>
+
+ <table><?php //V12 ?>
+    <?php for($i = 0; $i < count($this->posts); $i++): ?><?php //V12 ?>
+    <tr><?php //V12 ?>
+        <td><?php //V12 ?>
+            <?php echo $this->posts[$i]['id']; ?><?php //V12 ?>
+        </td><?php //V12 ?>
+        <td><?php //V12 ?>
+            <?php echo $this->posts[$i]['nombre']; ?><?php //V12 ?>
+        </td><?php //V12 ?>
+    </tr><?php //V12 ?>
+    <?php endfor; ?><?php //V12 ?>
+</table><?php //V12 ?>
+
+ <?php else: ?><?php //V12 ?>
+<p><strong>No hay post!</strong></p><?php //V12 ?>
+
+ <?php endif; ?><?php //V12 ?>
+
+ <?php if(isset($this->paginacion)) echo $this->paginacion; ?><?php //V12 ?>
