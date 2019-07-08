@@ -1,0 +1,24 @@
+<?php 
+
+//V9 
+
+?>
+<h2>Iniciar Sesi&oacute;n</h2> <?php //V9 ?>
+
+<form name="form1" method="post" action=""> <?php //V9 ?>
+    <input type="hidden" value="1" name="enviar" /> <?php //V9 ?>
+    
+    <p> <?php //V9 ?>
+        <label>Usuario: </label> <?php //V9 ?>
+        <input type="text" name="usuario" value="<?php if(isset($this->datos)) echo $this->datos['usuario'];  //para q se mantenga nombre d usuario ?>" /> <?php //V9 ?>
+    </p> <?php //V9 ?>
+    
+    <p> <?php //V9 ?>
+        <label>Password: </label> <?php //V9 ?>
+        <input type="password" name="pass" /> <?php //V9 ?>
+    </p> <?php //V9 ?>
+    
+    <p> <?php //V9 ?>
+        <input type="submit" value="enviar" /> <?php //V9 ?>
+    </p> <?php //V9 ?>
+</form> <?php //V9 ?>
